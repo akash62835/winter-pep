@@ -1,14 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const ChangeComponent = () => {
-  const [value, setValue] = useState('');
+const ChangeEventComponent = () => {
+  const [text, setText] = useState("");
 
   const handleChange = (event) => {
-    setValue(event.target.value);
+    setText(event.target.value);
   };
 
   return (
-    <input type="text" value={value} onChange={handleChange} />
+    <div>
+      <h2>React Change Event Example</h2>
+      <input
+        type="text"
+        value={text}
+        onChange={handleChange}
+        placeholder="Type something..."
+      />
+      <p>Input Value: {text}</p>
+    </div>
   );
 };
-export default ChangeComponent;
+
+export default ChangeEventComponent;
