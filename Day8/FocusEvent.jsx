@@ -13,7 +13,7 @@ const FocusEventComponent = () => {
 
   return (
     <div>
-      <h2>React Focus Event Example</h2>
+     
       <input
         type="text"
         onFocus={handleFocus}
