@@ -9,7 +9,7 @@ const ChangeEventComponent = () => {
 
   return (
     <div>
-      <h2>React Change Event Example</h2>
+
       <input
         type="text"
         value={text}
